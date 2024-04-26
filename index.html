@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric-bulb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="head">Bulb  <span id="text"></span></div>
+        <img id="img" src="" alt="">
+        <div class="btn">
+        <button id="btnof"  onclick="myFunof()">of</button>
+        <button id="btnon"  onclick="myFunon()">on</button>
+    </div>
+    </div>
+
+    <script>
+ document.getElementById("img").src= "of.png.jpg"
+ document.getElementById("btnof").style.backgroundColor="green"
+ function myFunof(){
+   document.getElementById("img").src = "of.png.jpg"
+   document.getElementById("text").innerHTML ="of"
+   document.getElementById("btnof").style.backgroundColor= "green"
+   document.getElementById("btnof").style.color= "black"
+   document.getElementById("btnon").style.backgroundColor= "white"
+ }
+ function myFunon(){
+   document.getElementById("img").src = "on.png.png"
+   document.getElementById("text").innerHTML ="on"
+   document.getElementById("btnon").style.backgroundColor= "red"
+   document.getElementById("btnof").style.backgroundColor= "white"
+   document.getElementById("btnof").style.color= "black"
+ }
+    </script>
+</body>
+</html>
